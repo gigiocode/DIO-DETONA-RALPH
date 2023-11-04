@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/images/favicon.jpg" type="image/x-icon" />
+    <title>Detona Ralph</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="menu">
+            <div class="menu-time">
+                <h2 style="color: red;">Tempo Restante</h2>
+                <h2 id="time-left" class="child">0</h2>
+            </div>
+            <div class="menu-score">
+                <h2 style="color: red;">Pontuação</h2>
+                <h2 id="score" class="child">0</h2>
+            </div>
+            <div class="menu-lives">
+                <img src="./src/images/player.png" alt="foto do jogador" height="60px" srcset="">
+                <h2 class="infinito">&#8734;</h2>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-row">
+                <div class="square" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+            </div>
+
+            <div class="panel-row">
+                <div class="square" id="6"></div>
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+                <div class="square" id="10"></div>
+            </div>
+
+            <div class="panel-row">
+                <div class="square" id="11"></div>
+                <div class="square" id="12"></div>
+                <div class="square enemy" id="13"></div>
+                <div class="square" id="14"></div>
+                <div class="square" id="15"></div>
+            </div>
+
+            <div class="panel-row">
+                <div class="square" id="16"></div>
+                <div class="square" id="17"></div>
+                <div class="square" id="18"></div>
+                <div class="square" id="19"></div>
+                <div class="square" id="20"></div>
+            </div>
+
+            <div class="panel-row">
+                <div class="square" id="21"></div>
+                <div class="square" id="22"></div>
+                <div class="square" id="23"></div>
+                <div class="square" id="24"></div>
+                <div class="square" id="25"></div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script defer src="./src/scripts/engine.js"></script>
+</body>
+</html>
